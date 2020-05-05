@@ -43,12 +43,6 @@ class functions():
 
         if monthfrom == monthto:
             seasonalproduct = 1
-
-        elif monthfrom < monthto:
-            for i in range(12):
-                if (i + 1)  >= monthfrom and (i+1) <= monthto:
-                    seasonalproduct = seasonalproduct * float(seasonalitydf.loc[seasonalitydf.index== (i+1),'factor'])
-
         else:
             for i in range(12):
                 if (i+1) >=  monthfrom or (i+1) <= monthto:

@@ -4,7 +4,8 @@ import math
 import clsFiles
 import clsFunctions
 
-def computepvandriskforinflationswaps(valuationdate, currency, aswapsfile, aunwindfile, acurvefile, afixingsfile, aseasonalityfile, nominalindex, inflationindex):
+def computepvandriskforinflationswaps(valuationdate, currency, aswapsfile, aunwindfile, acurvefile, 
+                afixingsfile, aseasonalityfile, nominalindex, inflationindex):
 
         f =  clsFiles.filesToDataFrames('swaps.csv', 'unwinds.csv', 'curves.csv', 'fixings.csv', 'seasonality.csv')
         fc = clsFunctions.functions()
@@ -82,7 +83,8 @@ def computepvandriskforinflationswaps(valuationdate, currency, aswapsfile, aunwi
 
 def main():
 
-        computepvandriskforinflationswaps('31/03/2020', 'GBP', 'swaps.csv','unwinds.csv', 'curves.csv', 'fixings.csv', 'seasonality.csv', 'SONIA', 'UKRPI')
+        computepvandriskforinflationswaps('31/03/2020', 'GBP', 'swaps.csv','unwinds.csv', 'curves.csv',
+                         'fixings.csv', 'seasonality.csv', 'SONIA', 'UKRPI')
 
 if __name__ == '__main__':
         main()
