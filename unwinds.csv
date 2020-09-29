@@ -1,0 +1,3 @@
+securityid,date,notional,counterparty,fee,paymentdate
+1000001, 31/12/2019, 100000,bank1,500,02/01/2020
+1000001, 15/01/2020, 10000,bank1,200,17/01/2020

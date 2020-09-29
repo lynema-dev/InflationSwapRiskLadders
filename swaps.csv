@@ -1,0 +1,11 @@
+securityid,portfolio,effectivedate,maturitydate,notional,fixedrate,ccy,inflationindex,lagmonths,direction,counterparty
+101,portfolio1,31/03/19,31/03/25,1000000,3.31,GBP,UKRPI,2,pay,bank1
+102,portfolio1,28/02/19,31/01/30,1000000,3.31,GBP,UKRPI,2,pay,bank1
+103,portfolio1,30/11/19,30/11/35,1000000,3.34,GBP,UKRPI,2,pay,bank2
+104,portfolio1,30/11/19,30/11/40,1000000,3.37,GBP,UKRPI,2,pay,bank3
+105,portfolio1,30/11/19,30/11/50,1000000,3.4,GBP,UKRPI,2,pay,bank2
+106,portfolio2,31/10/19,31/10/23,1000000,3.35,GBP,UKRPI,2,rec,bank4
+107,portfolio2,31/10/19,31/10/30,2000000,3.43,GBP,UKRPI,2,rec,bank1
+108,portfolio3,31/10/19,31/10/40,2000000,3.51,GBP,UKRPI,2,pay,bank3
+109,portfolio3,31/10/19,31/10/60,2000000,3.53,GBP,UKRPI,2,pay,bank1
+110,portfolio3,31/10/19,31/10/65,2000000,3.55,GBP,UKRPI,2,pay,bank1
