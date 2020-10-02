@@ -19,12 +19,11 @@ class functions():
     def discountFactor(self, date, shift, curvesdf, valuationdate):
         
         x = curvesdf['tenor']
-        #curvesdf['rate'] += shift
         y =  curvesdf['rate'] + shift
 
-        tenor = (date-valuationdate).days / 365.25
-        rate = np.interp(tenor, x, y)
-        return 1 / ((1 + rate/100) ** tenor)
+        tenorpoint = (date - valuationdate).days / 365.25
+        rate = np.interp(tenorpoint, x, y)
+        return 1 / ((1 + rate/100) ** tenorpoint)
         
 
     def inflationProjection(self, date, shift, curvesdf, valuationdate, currentcpilevel):
@@ -32,9 +31,9 @@ class functions():
         x = curvesdf['tenor']
         y = curvesdf['rate'] + shift
 
-        tenor = (date - valuationdate).days / 365.25
-        rate = np.interp(tenor, x, y)
-        return currentcpilevel * (1 + rate/100) ** tenor
+        tenorpoint = (date - valuationdate).days / 365.25
+        rate = np.interp(tenorpoint, x, y)
+        return currentcpilevel * (1 + rate/100) ** tenorpoint
 
 
     def seasonalityfactor(self, monthfrom, monthto, seasonalitydf):
